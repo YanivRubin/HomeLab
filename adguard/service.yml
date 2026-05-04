@@ -4,9 +4,7 @@ metadata:
   name: adguard-service
   namespace: adguard
 spec:
-  type: LoadBalancer
-  # externalIPs: 
-  # - 192.168.1.170
+  type: ClusterIP
   selector:
     appname: adguard
   ports:
