@@ -15,6 +15,7 @@ metadata:
   namespace: adguard
 spec:
   replicas: 1
+  revisionHistoryLimit: 0 # no extra replica sets!
   selector:
     matchLabels:
       appname: adguard
